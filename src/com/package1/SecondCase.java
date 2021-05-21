@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+// extends mean it runs all the test given in LoginTest class and than run function of this class
+
 public class SecondCase extends LoginTest {
   @Test
   public void f() {	
