@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class SecondCase extends LoginTest {
   @Test
-  public void f() {	
+  public void secondCaseFunction() {	
 //	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Yousaf\\eclipse-workspace\\TestNgDemo\\chromeDriver\\chromedriver.exe");
 //	driver = new ChromeDriver();
 //	driver.manage().window().maximize();

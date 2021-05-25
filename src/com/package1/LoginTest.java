@@ -1,16 +1,19 @@
 package com.package1;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 public class LoginTest {
 
@@ -18,16 +21,35 @@ public class LoginTest {
 	public static WebDriver driver;
 	public WebDriverWait wait;
 	public String vars;
+	
+	// THIS CODE IS TO RUN IT IN MULTIPLE BROWSERS
+	@Parameters("browser")
+	@BeforeTest
+	public void beforeTest(String browser) {
+	    if(browser.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Yousaf\\eclipse-workspace\\TestNgDemo\\chromeDriver\\chromedriver.exe");
+	        driver = new ChromeDriver();
+	    }
+	    else if(browser.equalsIgnoreCase("ie")){
+	        System.setProperty("webdriver.ie.driver", "C://Selenium/IEDriverServer.exe");
+	        driver = new InternetExplorerDriver();
+	    }
+	    else{
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Yousaf\\eclipse-workspace\\TestNgDemo\\chromeDriver\\geckodriver.exe");
+	        driver = new FirefoxDriver();
+
+	    }
+	}
 
 
 	@Test
 	public void SuccessLogin() {
 		//	String filepath = "./chromeDriver/chromedriver.exe";
 		//	System.setProperty("webdriver.chrome.driver", filepath);
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Yousaf\\eclipse-workspace\\TestNgDemo\\chromeDriver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Yousaf\\eclipse-workspace\\TestNgDemo\\chromeDriver\\chromedriver.exe");
+	//	driver = new ChromeDriver();
+	//	driver.manage().window().maximize();
+	//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.saucedemo.com/");
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");

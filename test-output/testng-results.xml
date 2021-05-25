@@ -1,51 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="2" total="12" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-21T18:01:10 PKT" name="Suite" finished-at="2021-05-21T18:01:42 PKT" duration-ms="31663">
+  <suite started-at="2021-05-25T21:02:36 PKT" name="Suite" finished-at="2021-05-25T21:03:14 PKT" duration-ms="37768">
     <groups>
     </groups>
-    <test started-at="2021-05-21T18:01:10 PKT" name="Test" finished-at="2021-05-21T18:01:42 PKT" duration-ms="31663">
+    <test started-at="2021-05-25T21:02:36 PKT" name="ChromeTest" finished-at="2021-05-25T21:02:50 PKT" duration-ms="13626">
       <class name="com.package1.LoginTest">
-        <test-method signature="SuccessLogin()[pri:0, instance:com.package1.LoginTest@7880cdf3]" started-at="2021-05-21T18:01:22 PKT" name="SuccessLogin" finished-at="2021-05-21T18:01:38 PKT" duration-ms="16330" status="PASS">
+        <test-method signature="SuccessLogin()[pri:0, instance:com.package1.LoginTest@69b2283a]" started-at="2021-05-25T21:02:46 PKT" name="SuccessLogin" finished-at="2021-05-25T21:02:47 PKT" duration-ms="1323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessLogin -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.package1.LoginTest@7880cdf3]" started-at="2021-05-21T18:01:22 PKT" name="beforeClass" finished-at="2021-05-21T18:01:22 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.package1.LoginTest@69b2283a]" started-at="2021-05-25T21:02:46 PKT" name="beforeClass" finished-at="2021-05-25T21:02:46 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyLogout()[pri:0, instance:com.package1.LoginTest@7880cdf3]" started-at="2021-05-21T18:01:38 PKT" name="verifyLogout" finished-at="2021-05-21T18:01:42 PKT" duration-ms="3248" status="PASS">
+        <test-method signature="verifyLogout()[pri:0, instance:com.package1.LoginTest@69b2283a]" started-at="2021-05-25T21:02:47 PKT" name="verifyLogout" finished-at="2021-05-25T21:02:50 PKT" duration-ms="3222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.package1.LoginTest@7880cdf3]" started-at="2021-05-21T18:01:42 PKT" name="afterClass" finished-at="2021-05-21T18:01:42 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.package1.LoginTest@69b2283a]" started-at="2021-05-25T21:02:50 PKT" name="afterClass" finished-at="2021-05-25T21:02:50 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.package1.LoginTest -->
       <class name="com.package1.SecondCase">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.package1.SecondCase@47d90b9e]" started-at="2021-05-21T18:01:10 PKT" name="beforeClass" finished-at="2021-05-21T18:01:10 PKT" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.package1.SecondCase@7880cdf3]" started-at="2021-05-25T21:02:36 PKT" name="beforeTest" finished-at="2021-05-25T21:02:39 PKT" duration-ms="2979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.package1.SecondCase@7880cdf3]" started-at="2021-05-25T21:02:39 PKT" name="beforeClass" finished-at="2021-05-25T21:02:39 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="SuccessLogin()[pri:0, instance:com.package1.SecondCase@47d90b9e]" started-at="2021-05-21T18:01:10 PKT" name="SuccessLogin" finished-at="2021-05-21T18:01:19 PKT" duration-ms="8722" status="PASS">
+        <test-method signature="SuccessLogin()[pri:0, instance:com.package1.SecondCase@7880cdf3]" started-at="2021-05-25T21:02:39 PKT" name="SuccessLogin" finished-at="2021-05-25T21:02:42 PKT" duration-ms="2759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessLogin -->
-        <test-method signature="verifyLogout()[pri:0, instance:com.package1.SecondCase@47d90b9e]" started-at="2021-05-21T18:01:19 PKT" name="verifyLogout" finished-at="2021-05-21T18:01:22 PKT" duration-ms="3250" status="PASS">
+        <test-method signature="verifyLogout()[pri:0, instance:com.package1.SecondCase@7880cdf3]" started-at="2021-05-25T21:02:42 PKT" name="verifyLogout" finished-at="2021-05-25T21:02:45 PKT" duration-ms="3239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogout -->
-        <test-method signature="f()[pri:0, instance:com.package1.SecondCase@47d90b9e]" started-at="2021-05-21T18:01:22 PKT" name="f" finished-at="2021-05-21T18:01:22 PKT" duration-ms="46" status="PASS">
+        <test-method signature="f()[pri:0, instance:com.package1.SecondCase@7880cdf3]" started-at="2021-05-25T21:02:45 PKT" name="f" finished-at="2021-05-25T21:02:46 PKT" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.package1.SecondCase@47d90b9e]" started-at="2021-05-21T18:01:22 PKT" name="afterClass" finished-at="2021-05-21T18:01:22 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.package1.SecondCase@7880cdf3]" started-at="2021-05-25T21:02:46 PKT" name="afterClass" finished-at="2021-05-25T21:02:46 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.package1.SecondCase -->
-    </test> <!-- Test -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2021-05-25T21:02:50 PKT" name="FirefoxTest" finished-at="2021-05-25T21:03:14 PKT" duration-ms="24062">
+      <class name="com.package1.LoginTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.package1.LoginTest@4ac3c60d]" started-at="2021-05-25T21:03:10 PKT" name="beforeClass" finished-at="2021-05-25T21:03:10 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="SuccessLogin()[pri:0, instance:com.package1.LoginTest@4ac3c60d]" started-at="2021-05-25T21:03:10 PKT" name="SuccessLogin" finished-at="2021-05-25T21:03:11 PKT" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuccessLogin -->
+        <test-method signature="verifyLogout()[pri:0, instance:com.package1.LoginTest@4ac3c60d]" started-at="2021-05-25T21:03:11 PKT" name="verifyLogout" finished-at="2021-05-25T21:03:14 PKT" duration-ms="3571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.package1.LoginTest@4ac3c60d]" started-at="2021-05-25T21:03:14 PKT" name="afterClass" finished-at="2021-05-25T21:03:14 PKT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.package1.LoginTest -->
+      <class name="com.package1.SecondCase">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.package1.SecondCase@3911c2a7]" started-at="2021-05-25T21:02:50 PKT" name="beforeTest" finished-at="2021-05-25T21:03:04 PKT" duration-ms="13608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.package1.SecondCase@3911c2a7]" started-at="2021-05-25T21:03:04 PKT" name="beforeClass" finished-at="2021-05-25T21:03:04 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="SuccessLogin()[pri:0, instance:com.package1.SecondCase@3911c2a7]" started-at="2021-05-25T21:03:04 PKT" name="SuccessLogin" finished-at="2021-05-25T21:03:06 PKT" duration-ms="2488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuccessLogin -->
+        <test-method signature="verifyLogout()[pri:0, instance:com.package1.SecondCase@3911c2a7]" started-at="2021-05-25T21:03:06 PKT" name="verifyLogout" finished-at="2021-05-25T21:03:10 PKT" duration-ms="3606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method signature="f()[pri:0, instance:com.package1.SecondCase@3911c2a7]" started-at="2021-05-25T21:03:10 PKT" name="f" finished-at="2021-05-25T21:03:10 PKT" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.package1.SecondCase@3911c2a7]" started-at="2021-05-25T21:03:10 PKT" name="afterClass" finished-at="2021-05-25T21:03:10 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.package1.SecondCase -->
+    </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->
 </testng-results>
